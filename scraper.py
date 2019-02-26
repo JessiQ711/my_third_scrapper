@@ -13,7 +13,7 @@ root = lxml.html.fromstring(html)# Find something on the page using css selector
 root = lxml.html.fromstring(html)
 #Change "div[align='left']" to a different CSS selector to grab something else
 root.cssselect("li p a")
-matchedlinks=cssselect("li p a")
+matchedlinks=root.cssselect("li p a")
 print(matchedlinks)
 root.cssselect("div[align='left']")
 #
